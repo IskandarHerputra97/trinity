@@ -8,15 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		602F7E612A52983D00070A20 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 602F7E602A52983D00070A20 /* AppDelegate.swift */; };
-		602F7E632A52983D00070A20 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 602F7E622A52983D00070A20 /* SceneDelegate.swift */; };
-		602F7E652A52983D00070A20 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 602F7E642A52983D00070A20 /* ViewController.swift */; };
-		602F7E682A52983D00070A20 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 602F7E662A52983D00070A20 /* Main.storyboard */; };
 		602F7E6B2A52983D00070A20 /* TrinityWizard.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 602F7E692A52983D00070A20 /* TrinityWizard.xcdatamodeld */; };
 		602F7E6D2A52983E00070A20 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 602F7E6C2A52983E00070A20 /* Assets.xcassets */; };
 		602F7E702A52983E00070A20 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 602F7E6E2A52983E00070A20 /* LaunchScreen.storyboard */; };
 		602F7E7B2A52983E00070A20 /* TrinityWizardTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 602F7E7A2A52983E00070A20 /* TrinityWizardTests.swift */; };
 		602F7E852A52983E00070A20 /* TrinityWizardUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 602F7E842A52983E00070A20 /* TrinityWizardUITests.swift */; };
 		602F7E872A52983E00070A20 /* TrinityWizardUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 602F7E862A52983E00070A20 /* TrinityWizardUITestsLaunchTests.swift */; };
+		602F7E962A52987300070A20 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 602F7E942A52987300070A20 /* HomeViewController.swift */; };
+		602F7E972A52987300070A20 /* HomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 602F7E952A52987300070A20 /* HomeViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,9 +38,6 @@
 /* Begin PBXFileReference section */
 		602F7E5D2A52983D00070A20 /* TrinityWizard.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TrinityWizard.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		602F7E602A52983D00070A20 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		602F7E622A52983D00070A20 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		602F7E642A52983D00070A20 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		602F7E672A52983D00070A20 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		602F7E6A2A52983D00070A20 /* TrinityWizard.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = TrinityWizard.xcdatamodel; sourceTree = "<group>"; };
 		602F7E6C2A52983E00070A20 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		602F7E6F2A52983E00070A20 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -51,6 +47,8 @@
 		602F7E802A52983E00070A20 /* TrinityWizardUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TrinityWizardUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		602F7E842A52983E00070A20 /* TrinityWizardUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrinityWizardUITests.swift; sourceTree = "<group>"; };
 		602F7E862A52983E00070A20 /* TrinityWizardUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrinityWizardUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		602F7E942A52987300070A20 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		602F7E952A52987300070A20 /* HomeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,10 +99,8 @@
 		602F7E5F2A52983D00070A20 /* TrinityWizard */ = {
 			isa = PBXGroup;
 			children = (
+				602F7E932A52986300070A20 /* Home */,
 				602F7E602A52983D00070A20 /* AppDelegate.swift */,
-				602F7E622A52983D00070A20 /* SceneDelegate.swift */,
-				602F7E642A52983D00070A20 /* ViewController.swift */,
-				602F7E662A52983D00070A20 /* Main.storyboard */,
 				602F7E6C2A52983E00070A20 /* Assets.xcassets */,
 				602F7E6E2A52983E00070A20 /* LaunchScreen.storyboard */,
 				602F7E712A52983E00070A20 /* Info.plist */,
@@ -128,6 +124,15 @@
 				602F7E862A52983E00070A20 /* TrinityWizardUITestsLaunchTests.swift */,
 			);
 			path = TrinityWizardUITests;
+			sourceTree = "<group>";
+		};
+		602F7E932A52986300070A20 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				602F7E942A52987300070A20 /* HomeViewController.swift */,
+				602F7E952A52987300070A20 /* HomeViewController.xib */,
+			);
+			path = Home;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -236,7 +241,7 @@
 			files = (
 				602F7E702A52983E00070A20 /* LaunchScreen.storyboard in Resources */,
 				602F7E6D2A52983E00070A20 /* Assets.xcassets in Resources */,
-				602F7E682A52983D00070A20 /* Main.storyboard in Resources */,
+				602F7E972A52987300070A20 /* HomeViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -261,10 +266,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				602F7E652A52983D00070A20 /* ViewController.swift in Sources */,
 				602F7E612A52983D00070A20 /* AppDelegate.swift in Sources */,
 				602F7E6B2A52983D00070A20 /* TrinityWizard.xcdatamodeld in Sources */,
-				602F7E632A52983D00070A20 /* SceneDelegate.swift in Sources */,
+				602F7E962A52987300070A20 /* HomeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -301,14 +305,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		602F7E662A52983D00070A20 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				602F7E672A52983D00070A20 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		602F7E6E2A52983E00070A20 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -446,7 +442,6 @@
 				INFOPLIST_FILE = TrinityWizard/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -474,7 +469,6 @@
 				INFOPLIST_FILE = TrinityWizard/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
