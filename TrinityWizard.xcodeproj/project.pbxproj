@@ -16,6 +16,12 @@
 		602F7E872A52983E00070A20 /* TrinityWizardUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 602F7E862A52983E00070A20 /* TrinityWizardUITestsLaunchTests.swift */; };
 		602F7E962A52987300070A20 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 602F7E942A52987300070A20 /* HomeViewController.swift */; };
 		602F7E972A52987300070A20 /* HomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 602F7E952A52987300070A20 /* HomeViewController.xib */; };
+		602F7EA02A52AB6D00070A20 /* ContactCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 602F7E9E2A52AB6D00070A20 /* ContactCollectionViewCell.swift */; };
+		602F7EA12A52AB6D00070A20 /* ContactCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 602F7E9F2A52AB6D00070A20 /* ContactCollectionViewCell.xib */; };
+		602F7EA52A52AD9A00070A20 /* ContactDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 602F7EA32A52AD9A00070A20 /* ContactDetailViewController.swift */; };
+		602F7EA62A52AD9A00070A20 /* ContactDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 602F7EA42A52AD9A00070A20 /* ContactDetailViewController.xib */; };
+		602F7EA82A52B2F000070A20 /* data.json in Resources */ = {isa = PBXBuildFile; fileRef = 602F7EA72A52B2F000070A20 /* data.json */; };
+		602F7EAB2A52B35700070A20 /* ContactModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 602F7EAA2A52B35700070A20 /* ContactModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +55,12 @@
 		602F7E862A52983E00070A20 /* TrinityWizardUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrinityWizardUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		602F7E942A52987300070A20 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		602F7E952A52987300070A20 /* HomeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeViewController.xib; sourceTree = "<group>"; };
+		602F7E9E2A52AB6D00070A20 /* ContactCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactCollectionViewCell.swift; sourceTree = "<group>"; };
+		602F7E9F2A52AB6D00070A20 /* ContactCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ContactCollectionViewCell.xib; sourceTree = "<group>"; };
+		602F7EA32A52AD9A00070A20 /* ContactDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactDetailViewController.swift; sourceTree = "<group>"; };
+		602F7EA42A52AD9A00070A20 /* ContactDetailViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ContactDetailViewController.xib; sourceTree = "<group>"; };
+		602F7EA72A52B2F000070A20 /* data.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = data.json; sourceTree = "<group>"; };
+		602F7EAA2A52B35700070A20 /* ContactModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +111,10 @@
 		602F7E5F2A52983D00070A20 /* TrinityWizard */ = {
 			isa = PBXGroup;
 			children = (
+				602F7EA92A52B34E00070A20 /* Model */,
+				602F7EA72A52B2F000070A20 /* data.json */,
+				602F7EA22A52AD7B00070A20 /* ContactDetail */,
+				602F7E9D2A52AB5200070A20 /* Component */,
 				602F7E932A52986300070A20 /* Home */,
 				602F7E602A52983D00070A20 /* AppDelegate.swift */,
 				602F7E6C2A52983E00070A20 /* Assets.xcassets */,
@@ -133,6 +149,32 @@
 				602F7E952A52987300070A20 /* HomeViewController.xib */,
 			);
 			path = Home;
+			sourceTree = "<group>";
+		};
+		602F7E9D2A52AB5200070A20 /* Component */ = {
+			isa = PBXGroup;
+			children = (
+				602F7E9E2A52AB6D00070A20 /* ContactCollectionViewCell.swift */,
+				602F7E9F2A52AB6D00070A20 /* ContactCollectionViewCell.xib */,
+			);
+			path = Component;
+			sourceTree = "<group>";
+		};
+		602F7EA22A52AD7B00070A20 /* ContactDetail */ = {
+			isa = PBXGroup;
+			children = (
+				602F7EA32A52AD9A00070A20 /* ContactDetailViewController.swift */,
+				602F7EA42A52AD9A00070A20 /* ContactDetailViewController.xib */,
+			);
+			path = ContactDetail;
+			sourceTree = "<group>";
+		};
+		602F7EA92A52B34E00070A20 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				602F7EAA2A52B35700070A20 /* ContactModel.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -240,7 +282,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				602F7E702A52983E00070A20 /* LaunchScreen.storyboard in Resources */,
+				602F7EA82A52B2F000070A20 /* data.json in Resources */,
+				602F7EA12A52AB6D00070A20 /* ContactCollectionViewCell.xib in Resources */,
 				602F7E6D2A52983E00070A20 /* Assets.xcassets in Resources */,
+				602F7EA62A52AD9A00070A20 /* ContactDetailViewController.xib in Resources */,
 				602F7E972A52987300070A20 /* HomeViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -267,6 +312,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				602F7E612A52983D00070A20 /* AppDelegate.swift in Sources */,
+				602F7EA52A52AD9A00070A20 /* ContactDetailViewController.swift in Sources */,
+				602F7EAB2A52B35700070A20 /* ContactModel.swift in Sources */,
+				602F7EA02A52AB6D00070A20 /* ContactCollectionViewCell.swift in Sources */,
 				602F7E6B2A52983D00070A20 /* TrinityWizard.xcdatamodeld in Sources */,
 				602F7E962A52987300070A20 /* HomeViewController.swift in Sources */,
 			);
